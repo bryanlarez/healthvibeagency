@@ -1,7 +1,4 @@
-@font-face {
-    font-family: 'spicypizza';
-    src: url(../SpicyPizza/spicypizza-lg1pw.ttf);
-}
+
 
 @font-face {
     font-family: 'Oswald';
@@ -108,7 +105,7 @@ section {
     color: white;
     display: flex;
     min-height: 47rem;
-    background-image: url('../Images/abstract-elegant-dark-green-background-with-golden-line-diagonal-and-lighting-effect-sparkle-luxury-template-design-free-vector.jpg');
+    background-image: url('../healthvibeagency/FONDO.jpg');
     background-position: bottom;
     border-radius: 10px;
     background-size: cover;
