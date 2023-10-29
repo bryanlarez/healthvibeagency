@@ -15,10 +15,11 @@ html {
     font-family: Helvetica;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     border: 0;
+    height: 100%;
 }
 
 header {
@@ -93,7 +94,7 @@ nav .button:hover {
     border-right: 3px solid gray;
 }
 
-.main-content{
+.main-content {
     position: relative;
     top: 7.6rem;
     justify-content: space-around;
@@ -110,9 +111,10 @@ section {
     border-radius: 10px;
     background-size: cover;
     background-repeat: no-repeat;
-    position: fixed;
+    position: static;
     width: 100%;
     height: fit-content;
+    z-index: 5;
 }
 
 section .banner {
@@ -210,7 +212,7 @@ section .banner {
 
 #section #button:hover {
     border-bottom: 5px solid #b88f14;
-    border-right: 5px solid #b88f14;   
+    border-right: 5px solid #b88f14;
 }
 
 
@@ -234,37 +236,158 @@ section .banner {
 }
 
 
-@media only screen and  ( max-width: 816px ) { 
+@media only screen and (max-width: 816px) {
 
-    section{
+    section {
         min-height: 70rem;
 
     }
-    
-    nav{
+
+    nav {
         display: inline-flex;
         flex-direction: column;
     }
 
-    header .nav-text{
+    header .nav-text {
         margin-right: 0px;
         gap: 15px;
         margin-top: 20px;
     }
 
-    .nav-logo img{
-        
+    .nav-logo img {
+
         justify-content: space-around;
         justify-items: center;
         justify-self: center;
     }
 
-   
+
 }
 
-@media only screen and ( max-width: 480px ){
+@media only screen and (max-width: 480px) {
 
-    #section .clients{
+    #section .clients {
         gap: 0px;
     }
 }
+
+.carrousel {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    position: static;
+    top: 70rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    padding: 1px;
+}
+
+.carrousel .images {
+    display: inline-flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.google-partner img {
+    display: block;
+    height: 100px;
+    width: 100px;
+}
+
+.google-cloud img {
+    grid-column: 2/3;
+    display: block;
+    height: 70px;
+    width: 162px;
+
+}
+
+.meta img {
+    display: block;
+
+    height: 70px;
+    width: 210px;
+}
+
+.tiktok img {
+    display: block;
+
+    height: 70px;
+    width: 140px;
+}
+
+.make img {
+    display: block;
+
+    height: 40px;
+    width: 290px;
+}
+
+#services {
+    text-align: center;
+    width: 100%;
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 1px;
+}
+
+#services h3 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 0.1rem;
+    color: black;
+}
+
+#services h2 {
+    font-size: 3rem;
+    margin-top: 0.1rem;
+    color: #dbbe67;
+}
+
+
+.cards {
+    display: inline-flex;
+    justify-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-top: 3rem;
+    gap: 50px;
+    box-shadow: #b88f14 1px 0 30px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.cards .box {
+    box-shadow: #dbeddc 5px 0 20px;
+    margin: 2% 0 2%;
+    padding: 2%;
+    border-radius: 1rem;
+    width: 250px;
+    height: auto;
+    font-family: 'Oswald';
+}
+
+.cards .box:hover {
+    background-color: #b8daba;
+    border-bottom: solid 2px #70b578;
+    border-right: solid 2px #70b578;
+    color: white;
+}
+
+.box img {
+    height: 100px;
+    width: 100px;
+    width: 100%;
+}
+
+.box h3 {
+    text-transform: uppercase;
+}  
