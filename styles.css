@@ -100,7 +100,7 @@ nav .button:hover {
 @media only screen and ( max-width: 480px){
 
     header .nav-text {
-        max-width: 200px;
+        max-width: 380px;
         margin-right: 0;
     }
 
