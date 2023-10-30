@@ -20,6 +20,8 @@ body {
     padding: 0;
     border: 0;
     height: 100%;
+    width: 100%;
+
 }
 
 header {
@@ -59,7 +61,8 @@ header .nav-text {
     flex-direction: row;
     gap: 25px;
     flex-wrap: wrap;
-    margin-right: 4%;
+    margin-right: 1%;
+    width: 600px;
 
 }
 
@@ -67,10 +70,10 @@ header a {
     display: flex;
     text-transform: uppercase;
     text-decoration: none;
-    color: green;
+    color: #05402C;
     text-shadow: black 5px solid;
     align-items: center;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 nav .text:hover {
@@ -83,7 +86,7 @@ nav .text:hover {
 
 nav .button {
     display: flex;
-    background-color: green;
+    background-color: #05402C;
     color: white;
     padding: 15px 12px;
     border-radius: 1rem;
@@ -92,6 +95,28 @@ nav .button {
 nav .button:hover {
     border-bottom: 3px solid gray;
     border-right: 3px solid gray;
+}
+
+@media only screen and ( max-width: 480px){
+
+    header .nav-text {
+        max-width: 300px;
+        margin-right: 0;
+    }
+
+    header img{
+        height: 41px;
+        width: 125px;
+    }
+
+    header a{
+        font-size: 0.5rem;
+    }
+
+    header .nav-logo{
+        margin-left: 0;
+    }
+
 }
 
 .main-content {
@@ -179,7 +204,7 @@ section .banner {
 
 #content .one {
     max-width: 900px;
-    min-width: 390px;
+    min-width: 250px;
     justify-self: center;
     width: 100%;
 }
@@ -233,6 +258,14 @@ section .banner {
     color: #dbbe67;
     font-size: 2rem;
     text-shadow: green 1px 0 10px;
+}
+
+@media only screen and ( max-width: 480px){
+    
+    #section h1 {
+        font-size: 2rem;
+    }
+
 }
 
 
@@ -335,7 +368,7 @@ section .banner {
     display: flex;
     flex-direction: column;
     position: relative;
-    padding: 1px;
+    
 }
 
 #services h3 {
@@ -376,7 +409,7 @@ section .banner {
 }
 
 .cards .box:hover {
-    background-color: #b8daba;
+    background-color: #05402C;
     border-bottom: solid 2px #70b578;
     border-right: solid 2px #70b578;
     color: white;
@@ -391,3 +424,114 @@ section .banner {
 .box h3 {
     text-transform: uppercase;
 }  
+
+.sectiontwo{
+    display: block;
+    flex-direction: row;
+    position: static;
+    width: 100%;
+    height: auto;
+}
+
+#sectiontwo{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+}
+
+
+
+#sectiontwo .text{
+    font-family: 'Oswald';
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: auto;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+#sectiontwo h2{
+    font-size: 3rem;
+    max-width: 550px;
+}
+
+.text h2{
+    height: auto;
+    width: 100%;
+}
+
+#sectiontwo strong{
+    color: #008000;
+}
+
+#sectiontwo p{
+    font-size: 2rem;
+    max-width: 550px;
+    margin-bottom: 4rem;
+    margin-top: 0;
+    font-weight: 500;
+}
+
+.text p{
+    width: 100%;
+    height: auto;
+}
+
+#sectiontwo button{
+    font-size: 1rem;
+    width: 280px;
+    height: 70px;
+    border-radius: 10px;
+    background-color: #dbbe67;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 0;
+}
+
+#sectiontwo embed{
+    display: flex;
+    width: 600px;
+    height: auto;
+    border-radius: 15px;
+}
+embed{
+    width: 650px;
+    height: 400px;
+}
+
+@media only screen and ( max-width: 480px){
+
+    #sectiontwo embed{
+        width: 300px;
+        margin-top: 20px;
+    }
+
+    #sectiontwo h2{
+        font-size: 2rem;
+        max-width: 320px;
+        margin-bottom: 1rem;
+    }
+
+    #sectiontwo p{
+        font-size: 1rem;
+        max-width: 320px;
+        margin-bottom: 1rem;
+        margin-top: 0;
+        font-weight: 500;
+    }
+
+    #sectiontwo .text{
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+
+}
